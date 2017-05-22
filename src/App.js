@@ -1,27 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './Header'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="expanded row header">
-          <div className="clearfix">
-            <div className="float-left logo">
-              <img src="http://www.iconninja.com/files/409/4/1006/axe-icon.svg" alt="axe" />
-            </div>
-            <div className="float-right nav-links">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Log in</a>
-            </div>
-          </div>
-          <div className="headline text-center small-12 columns">
-            <h1>The Dwarf Underground</h1>
-            <h3>Delving deep for the <span className="gold">shiniest</span> news</h3>
-          </div>
-        </div>
+        <Header />
 
         <main className="expanded row">
           <div className="large-8 medium-12 columns article">
@@ -99,13 +84,13 @@ class App extends Component {
                 <p>Surprise for Indiana Hobbits born before 1999</p>
               </a> 
             </div>
-        </div>
-      </main>
+          </div>
+        </main>
 
-      <footer className="expanded row">
-        <h6>&copy; 2017 Erebor Industries</h6>
-        <h6 className="float-right">All rights reserved</h6>
-      </footer>
+        <footer className="expanded row">
+          <h6>&copy; 2017 Erebor Industries</h6>
+          <h6 className="float-right">All rights reserved</h6>
+        </footer>
 
       </div>
     );
